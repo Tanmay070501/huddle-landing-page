@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+a:link,a:visited{
+    text-decoration: none;
+}
+p{
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--very-dark-cyan);
+    line-height: 1;
+}
+main,section,footer{
+    width: 100%;
+}
+footer{
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+}
+.try-it-free{
+    font-size: 1.6rem;
+    border: 0.2rem solid var(--pink);
+    color: var(--pink);
+    padding: 0 3.6rem;
+}
+
+.huddle-logo,.try-it-free{
+    height: 5rem;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    text-align: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 4rem auto;
+}
+.hero-section-heading{
+    font-size: 5.2rem;
+}
+.hero-section > p{
+    max-width: 40%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.screen-mockups-img{
+    width: 90%;
+    margin: 8rem auto;
+}
+
+
+.hero-details{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.details-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.details-card h2{
+    font-size: 8.8rem;
+}
+.details-card p{
+    width: 100%;
+    font-size: 1.7rem;
+    opacity: 0.5;
+}
+.details-card img{
+    align-self: flex-start;
+}
+
+
+
+.grow-together{
+    background-color: var(--very-pale-blue);
+}
+.grow-together,.flowing-conversations,.your-users {
+    padding: 8rem 0;
+}
+
+
+.content-image-side{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 8rem;
+}
+
+.content h2{
+    font-size: 3.6rem;
+}
+.content p{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.order-2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.your-users{
+    background-color: var(--very-pale-blue);
+}
+
+.top-blob{
+    width: 100%;
+    height: 16.5rem;
+    background: url(../images/bg-section-top-desktop-1.svg) no-repeat;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.bottom-blob{
+    width: 100%;
+    height: 13.9rem;
+    background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat;
+    background-size: cover;
+}
+
+.top-blob-2{
+    width: 100%;
+    height: 15.6rem;
+    background: url(../images/bg-section-top-desktop-2.svg) no-repeat;
+    background-size: cover;
+}
+.bottom-blob-2{
+    width: 100%;
+    height: 13.9rem;
+    background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat;
+    background-size: cover;
+}
+.footer-top-blob{
+    width: 100%;
+    height: 15.8rem;
+    background: url(../images/bg-footer-top-desktop.svg) no-repeat;
+    background-size: cover;
+}
+
+.get-started{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 4rem;
+}
+.get-started h1{
+    font-size: 3.6rem;
+
+}
+.get-started-section{
+    margin: 16rem 0;
+}
+
+.footer{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 8rem;
+    font-size: 1.4rem;
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    flex-basis: 30%;
+}
+.details a,.details a:hover{
+    color: white;
+}
+.icon-and-para{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.9;
+
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.mail,.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.social-media a img,.social-media a{
+    width: 2.8rem;
+    height: 2.8rem;
+} 
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    flex-basis: 50%;
+}
+.newsletter p{
+    width: 75%;
+    line-height: 1.9;
+}
+.newsletter form{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 4rem;
+    height: 5rem;
+}
+.newsletter form button{
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--pink);
+    padding: 0.6rem 3.6rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: 600;
+}
+.newsletter form input{
+    flex-grow: 1;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.newsletter form button:hover{
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    background-color: var(--light-pink);
+}
+/*button*/
+.a-btn{
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 0 3.6rem;
+}
+.get-started-for-free{
+    background-color: var(--pink);
+    color: white;
+    padding: 2.4rem 6.4rem;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/*The end*/
+.attribution{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+.attribution a,.attribution a:hover{
+    color: white;
+}
+
+/*active-states*/
+.get-started-for-free:hover{
+    transition: background-color 0.2s linear;
+    background-color: var(--light-pink);
+}
+
+
+.try-it-free:hover{
+    box-shadow: var(--light-pink) 0 2px 15px -4px;
+    transition: box-shadow 0.1s linear;
+}
+/*just-for-fun*/
+::selection{
+    background-color: #ff1;
+    color: var(--very-dark-cyan);
+}
